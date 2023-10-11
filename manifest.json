@@ -1,0 +1,7 @@
+{
+    "manifest_version": 3,
+    "name": "Vieworthy",
+    "version": "0.0.1",
+    "description": "A video summarizer",
+    "author": "vieworthy@gmail.com"
+}
