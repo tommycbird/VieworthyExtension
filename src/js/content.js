@@ -33,33 +33,33 @@ function injectButton() {
               sumButton.innerText = 'Summarize';
               sumButton.className = 'summarize-button';
 
-              // Add rounded rectangle style
+              // Round the rectangle
               sumButton.style.borderRadius = '12px';
-              sumButton.style.padding = '8px 16px'; // Adjust padding to make the button larger
-              sumButton.style.display = 'flex';      // Use flexbox for alignment
-              sumButton.style.alignItems = 'center'; // Align items in the center vertically
+              sumButton.style.padding = '8px 16px'; 
+              sumButton.style.display = 'flex';      
+              sumButton.style.alignItems = 'center'; 
 
               // Positioning and other styles
-              sumButton.style.position = 'absolute'; // Position it absolutely within the relative container
-              sumButton.style.bottom = '10px';       // Place it at the bottom
-              sumButton.style.right = '10px';        // Place it to the right
+              sumButton.style.position = 'absolute'; 
+              sumButton.style.bottom = '10px';       
+              sumButton.style.right = '10px';       
               sumButton.style.backgroundColor = 'black';
               sumButton.style.color = 'white';
-              sumButton.style.zIndex = '10';         // To ensure it appears on top
-              sumButton.style.border = 'none';       // Remove default border
-              sumButton.style.cursor = 'pointer';    // Make it look clickable
+              sumButton.style.zIndex = '10';        
+              sumButton.style.border = 'none';     
+              sumButton.style.cursor = 'pointer';  
 
-              // Create the image element and set its properties
+              // Create the logo element
               const img = document.createElement('img');
               img.src = chrome.runtime.getURL('src/img/icon.png');
               img.width = 24;
               img.height = 24;
-              img.style.marginRight = '10px'; // Space between the image and the button text
+              img.style.marginRight = '10px'; 
 
               // Append the image to the button before the text
               sumButton.prepend(img);
 
-              // If meta isn't already set to relative, set it to be relative
+              // Make meta relative
               if (getComputedStyle(contentParent).position === 'static') {
                   contentParent.style.position = 'relative';
               }
