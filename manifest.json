@@ -20,6 +20,9 @@
             "matches": ["<all_urls>"],
             "extension_ids": ["*"]
         }
-    ]
+    ],
+    "action": {
+      "default_popup": "mini.html"
+    }
     
 }
